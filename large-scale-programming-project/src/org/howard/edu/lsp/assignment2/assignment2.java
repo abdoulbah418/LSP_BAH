@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class tobechanged {
+public class assignment2 {
 	
 	public static int sum = 0, product = 1;
 	public static ArrayList<Integer> tokens = new ArrayList<Integer>();
