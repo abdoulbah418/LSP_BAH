@@ -174,16 +174,13 @@ public class IntegerSet {
 	 * @param intSetb An IntegerSet
 	 */
 	public void diff(IntegerSet intSetb) {
-		IntegerSet newIntegerSet = new IntegerSet();
-
-		for (Integer num : this.set) {
-			newIntegerSet.add(num.intValue());
-		}
-
 		for (Integer num : intSetb.set) {
-			newIntegerSet.remove(num.intValue());
+			if (this.set.contains(num)) {
+				this.set.remove(num);
+			}
 		}
-		System.out.println(newIntegerSet.toString());
+
+		System.out.println(toString());
 	};
 
 	/**
